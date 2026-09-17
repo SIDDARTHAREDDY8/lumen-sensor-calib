@@ -1,0 +1,5 @@
+rotation_error_deg=0.1966
+translation_error_m=0.007256
+plane_residual_mean_m=0.008027
+plane_residual_max_m=0.020972
+result=PASS

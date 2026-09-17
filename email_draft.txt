@@ -1,0 +1,20 @@
+# NOTE (not part of the email): attach Resume_AIML.pdf when sending.
+# Send from siddarthareddychinthala@gmail.com. DO NOT SEND without approval.
+
+Subject: HN: built you a LiDAR-camera calibration demo
+
+Hi Daniel,
+
+Saw your HN post, and I'm interested in the Robotics Engineer role.
+
+The sensor calibration line is the part I've lived. On real robots, extrinsics drift, timestamps lie, and the logging pipeline is where sim2real goes to die quietly. So I built you a small working demo instead of a cover letter: a LiDAR-camera extrinsic calibrator in pure Python. Checkerboard target, RANSAC plane fits, Kabsch init, then a joint bundle adjustment over the extrinsic and all board poses, Kalibr-style. It recovers ground truth to under half a degree and 2 cm on synthetic data, with the gates enforced in code. There's also a stream health checker for the bring-up side: rate, jitter, gaps, monotonic timestamps.
+
+Repo: https://github.com/SIDDARTHAREDDY8/lumen-sensor-calib
+
+What you'd get is someone who's done the unglamorous sensor work before. I'm an AI Software Engineer at AirTrek Robotics, building the CV and LiDAR perception stack for GroundWatch, our autonomous wingwalking robots. I also ship open source most days: merged PRs in Microsoft's onnxruntime and bevy, plus edge-case fixes credited in dora. No sponsorship needed through June 2029 (F-1 OPT).
+
+Worth a 20-min call next week to walk through the math? Happy to adapt it to your actual LiDAR and camera pair if it's useful.
+
+Best,
+Siddartha
+siddarthareddychinthala@gmail.com
